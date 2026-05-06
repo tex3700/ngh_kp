@@ -1,0 +1,186 @@
+/*Modal wondow styles*/
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #DA5D24;
+    color: aliceblue;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 0.9em;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    min-width: 30%;
+    /* Ensure modal is on top */
+}
+
+.modal.show {
+    display: block;
+}
+
+.modal h2 {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.modal input {
+    /* height: 2vw; */
+    background-color: #DA5D24;
+    color: aliceblue;
+}
+
+.modal textarea {
+    height: 7vw;
+    width: 97%;
+    margin-top: 13px;
+    padding: 5px;
+    background-color: #DA5D24;
+    color: aliceblue;
+    border-radius: 5px;
+    font-size: 16px;
+    border-color: aliceblue;
+}
+
+.modal textarea::placeholder {
+    color: aliceblue;
+    font-size: 13px;
+}
+
+.modal button {
+    background-color: rgba(6, 37, 91, 0.80);
+    color: aliceblue;
+    padding: 10px 30px;
+    margin-left: 14%;
+    cursor: pointer;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    /* Ensure overlay is below modal */
+}
+
+.modal-overlay.show {
+    display: block;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    padding-bottom: 5px;
+}
+
+.label-float input {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    outline: none;
+    min-width: 80%;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.label-float input:focus {
+    border: 2px solid rgba(6, 37, 91, 0.80);
+}
+
+.label-float input::placeholder {
+    color: transparent;
+}
+
+.label-float textarea:focus {
+    border: 2px solid rgba(6, 37, 91, 0.80);
+}
+
+.label-float textarea::placeholder {
+    color: transparent;
+}
+
+.label-float label {
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 15px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    background-color: #DA5D24;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.textarea-wrap label {
+    pointer-events: none;
+    position: absolute;
+    top: calc(30% - 8px);
+    left: 15px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    background-color: #DA5D24;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.label-float input:required:invalid+label {
+    color: aliceblue;
+}
+
+.label-float input:focus:required:invalid {
+    border: 2px solid rgba(6, 37, 91, 0.80);
+}
+
+.label-float input:required:invalid+label:before {
+    content: '* ';
+}
+
+.label-float textarea:required:invalid+label {
+    color: aliceblue;
+}
+
+.label-float textarea:focus:required:invalid {
+    border: 2px solid rgba(6, 37, 91, 0.80);
+}
+
+.label-float textarea:required:invalid+label:before {
+    content: '* ';
+}
+
+.label-float input:focus+label,
+.label-float input:not(:placeholder-shown)+label {
+    font-size: 13px;
+    top: 0;
+    color: aliceblue;
+}
+
+.label-float textarea:focus+label,
+.label-float textarea:not(:placeholder-shown)+label {
+    font-size: 13px;
+    top: 12px;
+    color: aliceblue;
+}
+
+#responseMessage {
+    text-align: center;
+}
+
+.hp-field {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}

@@ -5,7 +5,15 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js'],
+            input: [
+                'resources/css/app.css',
+                'resources/css/hmain.css',
+                'resources/css/hpage.css',
+                'resources/css/ngh/catalog.css',
+                'resources/css/ngh/qrgen.css',
+                'resources/js/app.js',
+                'resources/js/ngh/qrgen.js',
+            ],
             refresh: true,
         }),
         tailwindcss(),

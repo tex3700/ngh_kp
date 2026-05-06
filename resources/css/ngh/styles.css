@@ -1,0 +1,492 @@
+/* @import url('https://fonts.googleapis.com/css2?family=CoFo+Sans:wght@400;500;700&display=swap'); */
+@font-face {
+    font-family: 'CoFoSans';
+    src: url('/fonts/CoFoSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url('/fonts/Mulish/Mulish-VariableFont_wght.ttf') format('woff2-variations');
+    src: url('/fonts/Mulish/Mulish-VariableFont_wght.ttf') format('woff2') tech('variations');
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+
+/*@font-face {*/
+/*    font-family: 'Source Sans Pro';*/
+/*    src: url('/fonts/Source Sans Pro/SourceSansPro-Regular.ttf') format('woff2-variations');*/
+/*    src: url('/fonts/Source Sans Pro/SourceSansPro-Regular.ttf') format('woff2') tech('variations');*/
+/*    font-weight: 100 1000;*/
+/*    font-stretch: 25% 151%;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'Source Sans Pro';*/
+/*    src: url('/fonts/Source Sans Pro/SourceSansPro-Regular.ttf') format('woff2');*/
+/*    font-weight: 100 1000;*/
+/*    font-style: normal;*/
+/*    font-stretch: 25% 151%;*/
+/*}*/
+
+.cover-rectangle-right-bottom {
+    background-image: url("/img/Rectangle 34.png");
+    background-origin: content-box;
+    background-size: cover;
+    background-position-y: center;
+    float: right;
+    margin-top: 12%;
+    width: 25vw;
+    height: 60%;
+    display: flex;
+    justify-items: auto;
+    align-items: center;
+}
+
+.chem-f-1 {
+    width: 70%;
+}
+
+.chem-f-2 {
+    width: 10%;
+    position: absolute;
+    bottom: 3%;
+    left: 15%;
+}
+
+.cover-rectangle {
+    background: url("/img/Rectangle 28 top.png");
+    /*background-origin: content-box;*/
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90%;
+}
+
+.main-services {
+    background: #06255B;
+    width: 100%;
+    height: 1391px;
+    position: relative;
+    z-index: -1;
+}
+
+.services-description h2 {
+    color: #FFFFFF;
+}
+
+.services-description p,
+li {
+    color: #FFF;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 23.4px */
+    letter-spacing: 0.3px;
+    padding: 15px 15px 0 0;
+}
+
+.services-description {
+    max-width: 25vw;
+    position: absolute;
+    top: 42%;
+    left: 22%;
+}
+
+.main-bottom {
+    background: url("/img/Rectangle 28 bottom.png");
+    background-size: cover;
+    width: 100%;
+    height: 90%;
+}
+
+.reagent-card-wrapper {
+    text-align: center;
+    padding-top: 150px;
+    margin: 0 var(--side_indent);
+}
+
+.reagent-card-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.reagent-card {
+    /* background-color: #F7F9FC; */
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.reagent-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.reagent-card li {
+    color: #737B7D;
+    text-align: left;
+    padding: 0 0 5px 5px;
+}
+
+.reagent-card ul {
+    margin-bottom: 30px;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+.reagent-card img {
+    max-width: 4vw;
+    height: auto;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.reagent-card h3 {
+    color: #2F3034;
+    font-family: Mulish, sans-serif;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.3px;
+    margin-bottom: 20px;
+}
+
+.main-advantages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-advantages-heading {
+    max-width: 33%;
+    margin-top: 150px;
+}
+
+.main-advantages-heading h2 {
+    color: #000;
+    text-align: center;
+}
+
+.main-advantages-subheading {
+    max-width: 34%;
+    margin-top: 18px;
+    margin-bottom: 40px;
+}
+
+.subheading {
+    color: #737B7D;
+    text-align: center;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 23.4px */
+    letter-spacing: 0.3px;
+}
+
+.main-advantages-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: no-repeat bottom url("/img/Group 2364.png");
+    margin: 0 var(--side_indent);
+}
+
+.ma-vcard {
+    /* width: 16vw; */
+    height: 480px;
+    border: 1px solid #E2E2E2;
+    background: none;
+    flex: 1;
+}
+
+.mac-content {
+    margin: 40px 25px;
+}
+
+.card-description-header {
+    color: #2F3034;
+    font-family: Mulish, sans-serif;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 17px */
+    letter-spacing: 0.3px;
+    margin-top: 65%;
+}
+
+.card-description {
+    color: #FFFFFF;
+    font-family: Mulish, sans-serif;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.3px;
+    margin-top: 45%;
+    display: none;
+}
+
+.card-number {
+    color: #DA5D24;
+    font-family: Mulish, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 17px */
+    letter-spacing: 0.3px;
+}
+
+.card-plus {
+    margin-left: 15px;
+}
+
+.ma-vcard:hover p {
+    color: #FFFFFF !important;
+    font-size: 0.9em;
+    margin-top: 10%;
+}
+
+.ma-vcard:hover span {
+    display: block;
+}
+
+.ma-vcard.m-hover:nth-child(1),
+#mac-1:hover {
+    background-image: linear-gradient(rgba(6, 37, 91, 0.3), rgba(6, 37, 91, 0.3)), url("/img/drilling_engineer.jpg");
+    background-size: cover;
+}
+
+.ma-vcard.m-hover:nth-child(2),
+#mac-2:hover {
+    background-image: linear-gradient(rgba(6, 37, 91, 0.35), rgba(6, 37, 91, 0.60)), url("/img/labratory.webp");
+    background-size: cover;
+}
+
+.ma-vcard.m-hover:nth-child(3),
+#mac-3:hover {
+    background-image: linear-gradient(rgba(6, 37, 91, 0.35), rgba(6, 37, 91, 0.60)), url("/img/drilling_engineer.jpg");
+    background-size: cover;
+}
+
+.ma-vcard.m-hover:nth-child(4),
+#mac-4:hover {
+    background-image: linear-gradient(rgba(6, 37, 91, 0.35), rgba(6, 37, 91, 0.60)), url("/img/Enterprise_11.jpg");
+    background-size: cover;
+}
+
+.ma-vcard.m-hover:nth-child(5),
+#mac-5:hover {
+    background-image: linear-gradient(rgba(6, 37, 91, 0.35), rgba(6, 37, 91, 0.60)), url("/img/Delivery_service.jpg");
+    background-size: cover;
+}
+
+.ma-vcard.m-hover:nth-child(6),
+#mac-6:hover {
+    background-image: linear-gradient(rgba(6, 37, 91, 0.35), rgba(6, 37, 91, 0.60)), url("/img/equipment.jpg");
+}
+
+.main-experience {
+    width: 100%;
+}
+
+.main-experience-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 140px var(--side_indent) 70px var(--side_indent);
+}
+
+.me-heading {
+    height: 30%;
+    margin-left: 10px;
+    color: #000;
+}
+
+.main-experience-heading p {
+    margin: 0 10px 0 10px;
+    text-align: left;
+    width: 50%;
+}
+
+.main-documents-container {
+    display: flex;
+    margin-top: 100px;
+    padding: 0 var(--side_indent);
+}
+
+.documents-description h2 {
+    margin: 30px 0;
+}
+
+.documents-description ul {
+    margin: 15px 0;
+}
+
+.documents-description li {
+    color: #313131;
+}
+
+.documents-slider {
+    position: relative;
+    background: no-repeat bottom url("/img/Group 2367.svg");
+    background-size: contain;
+    width: 578px;
+    height: 601px;
+}
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 500px;
+    margin-top: -43%;
+    margin-left: -35%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.pics {
+    padding: 2px;
+}
+
+.pics .pic {
+    position: relative;
+    float: left;
+    margin: 2px;
+    width: 194px;
+    height: 244px;
+    cursor: pointer;
+    -webkit-animation: small 0.5s ease-in-out both;
+    animation: small 0.5s ease-in-out both;
+    transition: transform 0.5s ease-in-out, z-index 0s linear 0.5s;
+}
+
+.pics .pic.active {
+    -webkit-animation: big 0.5s ease-in-out both;
+    animation: big 0.5s ease-in-out both;
+}
+
+.pics .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.pics .pic.away img {
+    opacity: 0;
+}
+
+.pics .pic-1 {
+    transform-origin: 50% 30%;
+}
+
+.pics .pic-2 {
+    transform-origin: 50% 30%;
+}
+
+.pics .pic-3 {
+    transform-origin: 50% 80%;
+}
+
+.pics .pic-4 {
+    transform-origin: 50% 80%;
+}
+
+/* .pics .pic-5 {
+    transform-origin: 50% 50%;
+}
+
+.pics .pic-6 {
+    transform-origin: 100% 50%;
+}
+
+.pics .pic-7 {
+    transform-origin: 0% 100%;
+}
+
+.pics .pic-8 {
+    transform-origin: 50% 100%;
+}
+
+.pics .pic-9 {
+    transform-origin: 100% 100%;
+} */
+
+@-webkit-keyframes big {
+
+    0%,
+    1% {
+        transform: scale(1);
+        z-index: 2;
+    }
+
+    100% {
+        z-index: 2;
+        transform: scale(3.0625);
+    }
+}
+
+@keyframes big {
+
+    0%,
+    1% {
+        transform: scale(1);
+        z-index: 2;
+    }
+
+    100% {
+        z-index: 2;
+        transform: scale(3.0625);
+    }
+}
+
+@-webkit-keyframes small {
+    0% {
+        transform: scale(3.0625);
+        z-index: 2;
+    }
+
+    99% {
+        z-index: 2;
+        transform: scale(1);
+    }
+
+    100% {
+        z-index: 1;
+    }
+}
+
+@keyframes small {
+    0% {
+        transform: scale(3.0625);
+        z-index: 2;
+    }
+
+    99% {
+        z-index: 2;
+        transform: scale(1);
+    }
+
+    100% {
+        z-index: 1;
+    }
+}

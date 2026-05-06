@@ -1,0 +1,84 @@
+/*footer styles*/
+
+/*.foo-triangle {}*/
+
+.foo-body {
+    min-height: 300px;
+    padding: 35px 0 30px 2px;
+    position: relative;
+}
+
+.foo-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/adress_map.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: grayscale(100%) brightness(100%);
+}
+
+.foo-copyright {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.95;
+    background: #06255B;
+    padding: 15px 110px 25px 110px;
+    align-self: end;
+}
+
+.foo-copyright p {
+    color: #FFF;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    /* 157.143% */
+    letter-spacing: 0.3px;
+}
+
+.foo-contact-section {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 22.5px */
+    margin-left: 15px;
+}
+
+.foo-contacts {
+    opacity: 0.95;
+    background: #FFF;
+    display: flex;
+    justify-content: space-between;
+    max-width: 30%;
+    padding: 40px 20px 40px 20px;
+    margin: 0 0 0 30px;
+}
+
+.foo-contact-section p {
+    color: #313131;
+    margin-bottom: 20px;
+}
+
+.foo-contact-section a {
+    color: #FF7C40;
+}
+
+.foo-social {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+}
+
+.foo-logo {
+    align-self: start;
+    margin-top: 5%;
+}

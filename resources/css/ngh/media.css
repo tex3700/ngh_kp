@@ -1,0 +1,1354 @@
+@media (max-width: 1700px) {
+    .card-description {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1600px) {
+    .card-description {
+        font-size: 0.9em;
+    }
+
+}
+
+@media (max-width: 1500px) {
+    html {
+        --side_indent: 50px;
+        --srg_bottom: 100px;
+    }
+}
+
+@media (max-width: 1400px) {
+    html {
+        --side_indent: 20px;
+        --srg_bottom: 80px;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    .main-logo-text {
+        font-size: 2rem;
+    }
+
+    .main-article p {
+        font-size: 1rem;
+    }
+
+    .ma-vcard {
+        height: 464px;
+    }
+
+    #slider-container {
+        width: 97%;
+        height: unset;
+    }
+
+    .pagination {
+        margin-right: 0;
+    }
+
+    .slide img {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 1300px) {
+    html {
+        --srg_left: 18vw;
+        --srg_bottom: 28px;
+    }
+
+    .main-header {
+        height: 734px;
+    }
+
+    .main-services {
+        height: 1205px;
+    }
+
+    .cover-rectangle-right-top {
+        bottom: 1112px;
+    }
+
+    .main-description {
+        margin: 20vw 0 0 10vw;
+    }
+
+    .reagent-card {
+        padding: 15px 25px 15px 0;
+    }
+
+    .ma-vcard {
+        height: 445px;
+    }
+
+    .card-description {
+        font-size: 0.8em;
+    }
+
+    .pagination {
+        max-width: 48%;
+    }
+
+    .subheading {
+        font-size: 12px;
+    }
+
+    .slide-description {
+        margin: 16vw 7vw 0 2vw;
+    }
+
+    .modal button {
+        margin-left: 12%;
+    }
+
+    .main-menu a {
+        margin: 0 10px 0 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .services-description {
+        max-width: 40vw;
+        top: 38%;
+    }
+
+    .ma-vcard {
+        height: 408px;
+    }
+
+    .pagination {
+        max-width: 44%;
+    }
+
+    .documents-slider {
+        width: 420px;
+        height: 480px;
+    }
+
+    .frame {
+        top: 50%;
+        left: 50%;
+        width: 320px;
+        height: 400px;
+        margin-top: -41%;
+        margin-left: -38%;
+    }
+
+    .pics .pic {
+        width: 154px;
+        height: 186px;
+    }
+
+    .modal button {
+        margin-left: 10%;
+    }
+
+    .modal h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .main-advantages-cards {
+        gap: 5px;
+    }
+
+    .main-logo-text {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    html {
+        --srg_left: 16vw;
+        --srg_bottom: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-article p {
+        font-size: 0.9rem;
+    }
+
+    .md-button-left,
+    .md-button-right {
+        padding: 10px;
+    }
+
+    .main-services {
+        height: 1020px;
+    }
+
+    .cover-rectangle-right-top {
+        bottom: 955px;
+    }
+
+    .main-description {
+        margin: 20vw 0 0 8vw;
+    }
+
+    .header-rectangle-1 {
+        top: 232px;
+        right: 20vw;
+        width: 100px;
+        height: 100px;
+    }
+
+    .header-rectangle-1:hover {
+        width: 105px;
+        height: 105px;
+    }
+
+    .header-ground-rectangle-1 {
+        width: 105px;
+        height: 105px;
+    }
+
+    .header-rectangle-2 {
+        width: 80px;
+        height: 80px;
+        top: 389px;
+        right: 32vw;
+    }
+
+    .header-rectangle-2:hover {
+        width: 85px;
+        height: 85px;
+    }
+
+    .header-ground-rectangle-2 {
+        width: 85px;
+        height: 85px;
+    }
+
+    .header-rectangle-3 {
+        width: 110px;
+        height: 110px;
+        top: 519px;
+        right: 19.5vw;
+    }
+
+    .header-rectangle-3:hover {
+        width: 115px;
+        height: 115px;
+    }
+
+    .header-ground-rectangle-3 {
+        width: 115px;
+        height: 115px;
+    }
+
+    .rectangle-text-link {
+        font-size: 14px;
+    }
+
+    .services-description {
+        top: 41%;
+    }
+
+    .foo-logo {
+        max-width: 10vw;
+    }
+
+    .modal button {
+        margin-left: 5%;
+    }
+
+    .main-menu .menu-linc {
+        margin: 0 10px 0 10px;
+    }
+}
+
+@media (max-width: 1050px) {
+    html {
+        --srg_left: 6vw;
+        --srg_bottom: -50px;
+        --sr_size-vw: 11vw;
+    }
+
+    .main-logo-text {
+        font-size: 1.8rem;
+    }
+
+    .cover-rectangle-right-top {
+        bottom: 919px;
+    }
+
+    .box-wrapper:nth-child(8) {
+        transform: unset;
+    }
+
+    .box-wrapper.active:nth-child(8),
+    .box-wrapper:nth-child(8):hover {
+        transform: scale(1.1) translateX(-5%) translateY(-5%);
+    }
+
+    .box-wrapper:nth-child(7) {
+        transform: translateX(var(--polygon_gap-50)) translateY(var(--polygon_gap-50-neg));
+    }
+
+    .box-wrapper.active:nth-child(7),
+    .box-wrapper:nth-child(7):hover {
+        transform: scale(1.1) translateX(calc(50% - 10% + var(--polygon_margin))) translateY(var(--polygon_gap-50-neg));
+    }
+
+    .chem-f-2 {
+        width: 15%;
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+    }
+
+    #prev,
+    #next {
+        top: 100%;
+    }
+
+    .main-menu a {
+        margin: 0 8px 0 8px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .languages {
+        display: none;
+    }
+
+    .contacts-button {
+        margin-right: 30px;
+    }
+
+    .reagent-card img {
+        max-width: 50px;
+    }
+
+    .main-advantages-cards {
+        display: grid;
+        background: unset;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        grid-auto-flow: dense;
+    }
+
+    .ma-vcard {
+        height: 408px;
+        min-width: 300px;
+    }
+
+    #prev,
+    #next {
+        display: none;
+    }
+
+    .pics .pic-2 {
+        transform-origin: 70% 30%;
+    }
+
+    .pics .pic-4 {
+        transform-origin: 70% 80%;
+    }
+
+    .foo-contacts {
+        max-width: 40%;
+    }
+
+    .design-name {
+        display: none;
+    }
+
+    .modal button {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 960px) {
+    html {
+        --srg_left: 4vw;
+        --srg_bottom: -80px;
+        --sr_size-vw: 12vw;
+    }
+
+    .cover-rectangle-right-top {
+        bottom: 870px;
+    }
+
+    .main-services {
+        height: 977px;
+    }
+
+    .main-description {
+        margin: 24vw 0 0 8vw;
+    }
+
+    .header-rectangle-1 {
+        top: 232px;
+        right: 20vw;
+        width: 95px;
+        height: 95px;
+    }
+
+    .header-rectangle-1:hover {
+        width: 100px;
+        height: 100px;
+    }
+
+    .header-ground-rectangle-1 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .header-rectangle-2 {
+        width: 75px;
+        height: 75px;
+        top: 389px;
+        right: 32vw;
+    }
+
+    .header-rectangle-2:hover {
+        width: 80px;
+        height: 80px;
+    }
+
+    .header-ground-rectangle-2 {
+        width: 80px;
+        height: 80px;
+    }
+
+    .header-rectangle-3 {
+        width: 105px;
+        height: 105px;
+        top: 519px;
+        right: 19.5vw;
+    }
+
+    .header-rectangle-3:hover {
+        width: 110px;
+        height: 110px;
+    }
+
+    .header-ground-rectangle-3 {
+        width: 110px;
+        height: 110px;
+    }
+
+    .services-description {
+        top: 43%;
+    }
+
+    .ma-vcard {
+        height: 389px;
+        min-width: 290px;
+    }
+}
+
+@media (max-width: 940px) {
+    html {
+        --srg_left: 2vw;
+        --srg_bottom: -90px;
+        --sr_size-vw: 12vw;
+    }
+
+    .cover-rectangle-right-top {
+        bottom: 881px;
+    }
+
+    .services-description {
+        top: 43%;
+    }
+
+}
+
+@media (max-width: 920px) {
+    .main-menu {
+        display: none;
+    }
+
+    .sidebarMenuWrapper {
+        display: block;
+    }
+
+    .main-logo {
+        justify-content: center;
+    }
+
+    .main-header {
+        height: 735px;
+        background-position-x: right;
+    }
+
+    .services-description {
+        top: 44%;
+    }
+
+    .main-services {
+        height: 1020px;
+    }
+
+    .ma-vcard {
+        height: 389px;
+        min-width: 280px;
+    }
+}
+
+@media (max-width: 900px) {
+    html {
+        --srg_left: 1vw;
+    }
+
+    .services-description {
+        top: 40%;
+    }
+
+    .ma-vcard {
+        height: 389px;
+        min-width: 270px;
+    }
+}
+
+@media (max-width: 880px) {
+    html {
+        --srg_left: 0.2vw;
+    }
+
+    .cover-rectangle-right-top {
+        bottom: 909px;
+    }
+
+    .rectangle-text-link {
+        font-size: 12px;
+    }
+
+    .header-rectangle-1 {
+        top: 232px;
+        right: 20vw;
+        width: 85px;
+        height: 85px;
+    }
+
+    .header-rectangle-1:hover {
+        width: 90px;
+        height: 90px;
+    }
+
+    .header-ground-rectangle-1 {
+        width: 90px;
+        height: 90px;
+    }
+
+    .header-rectangle-2 {
+        width: 65px;
+        height: 65px;
+        top: 389px;
+        right: 32vw;
+    }
+
+    .header-rectangle-2:hover {
+        width: 70px;
+        height: 70px;
+    }
+
+    .header-ground-rectangle-2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    .header-rectangle-3 {
+        width: 95px;
+        height: 95px;
+        top: 519px;
+        right: 19.5vw;
+    }
+
+    .header-rectangle-3:hover {
+        width: 100px;
+        height: 100px;
+    }
+
+    .header-ground-rectangle-3 {
+        width: 100px;
+        height: 100px;
+    }
+
+    #rtl-1 {
+        transform: translate(1px, 36px) rotate(-45deg);
+    }
+
+    #rtl-2 {
+        transform: translate(1px, 26px) rotate(-45deg);
+    }
+
+    #rtl-3 {
+        transform: translate(5px, 40px) rotate(-45deg);
+    }
+
+    .reagent-card-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-description {
+        top: 42%;
+    }
+
+    .foo-body::before {
+        background-position-x: center;
+    }
+}
+
+@media (max-width: 860px) {
+    html {
+        --sr_size-vw: 10vw;
+        --sr_p_fsize: 11px;
+        --sr_rd_fsize: 12px;
+    }
+
+    .main-header {
+        height: 685px;
+        background-position-x: right;
+    }
+
+    .cover-rectangle-right-top {
+        bottom: 864px;
+    }
+
+    .services-description {
+        max-width: 60vw;
+        left: 11%;
+        top: 42%;
+    }
+
+    .main-services {
+        height: 960px;
+    }
+
+    .ma-vcard {
+        height: 389px;
+        min-width: 260px;
+    }
+}
+
+@media (max-width: 840px) {
+    html {
+        --srg_left: 1vw;
+    }
+
+    .ma-vcard {
+        height: 389px;
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 800px) {
+    html {
+        --srg_left: 0.6vw;
+        --sr_margin-px: 2px;
+        --sr_p_fsize: 10px;
+        --sr_rd_fsize: 11px;
+    }
+
+    .ma-vcard {
+        height: 389px;
+        min-width: 240px;
+    }
+
+    .foo-copyright {
+        padding: 15px 25px;
+    }
+
+    .modal {
+        min-width: 50%;
+    }
+
+    .modal textarea {
+        height: 100px;
+    }
+}
+
+@media (max-width: 780px) {
+    .ma-vcard {
+        height: 389px;
+        min-width: 220px;
+    }
+}
+
+@media (max-width: 760px) {
+    .main-description-buttons {
+        display: grid;
+        justify-content: left;
+        row-gap: 15px;
+    }
+
+    .cover-rectangle-right-top {
+        bottom: 880px;
+    }
+
+    .chem-f-2 {
+        width: 20%;
+        bottom: -1%;
+        left: 10%;
+    }
+
+    .main-advantages-subheading {
+        max-width: 54%;
+    }
+
+    .main-experience-heading {
+        display: grid;
+        row-gap: 20px;
+        margin: 140px var(--side_indent) 20px var(--side_indent);
+    }
+
+    .main-experience-heading p {
+        width: 95%;
+    }
+
+    #slider-container {
+        width: 95%;
+        height: unset;
+    }
+
+    .slide {
+        display: grid;
+        margin: 90px 0 0 0;
+    }
+
+    .slide img {
+        width: 90%;
+    }
+
+    .slide-description {
+        margin: 2vw 7vw 0 2vw;
+    }
+
+    .pagination {
+        max-width: 95%;
+    }
+
+    .main-documents-container {
+        display: grid;
+    }
+
+    .foo-contacts {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 740px) {
+    html {
+        --srg_left: unset;
+        --srg_right: 5vw;
+        --srg_bottom: -50px;
+    }
+
+    .header-rectangle-1 {
+        right: 16vw;
+    }
+
+    .header-rectangle-3 {
+        right: 16vw;
+    }
+
+    .box-wrapper:nth-child(1) {
+        transform: translateX(var(--polygon_gap-50));
+    }
+
+    .box-wrapper:nth-child(4) {
+        transform: translateX(var(--polygon_gap-50)) translateY(var(--polygon_gap-50-neg));
+    }
+
+    .box-wrapper.active:nth-child(4),
+    .box-wrapper:nth-child(4):hover {
+        transform: scale(1.1) translateX(calc(50% - 10% + var(--polygon_margin))) translateY(var(--polygon_gap-50-neg));
+    }
+
+    .ma-vcard {
+        height: 389px;
+        min-width: 210px;
+    }
+}
+
+@media (max-width: 680px) {
+    .reagent-card-wrapper {
+        padding-top: 140px;
+    }
+
+    .main-advantages-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ma-vcard {
+        height: 389px;
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 660px) {
+    .ma-vcard {
+        height: 389px;
+        min-width: 290px;
+    }
+}
+
+@media (max-width: 640px) {
+    html {
+        --sr_size-vw: 11vw;
+        --srg_right: 2vw;
+    }
+
+    .cover-rectangle-right-top {
+        width: 27%;
+    }
+
+    .cover-rectangle-right-bottom {
+        width: 37vw;
+        height: 63%;
+    }
+
+    .header-rectangle-1 {
+        display: none;
+    }
+
+    .header-rectangle-2 {
+        display: none;
+    }
+
+    .header-rectangle-3 {
+        display: none;
+    }
+
+    .main-description {
+        margin: 35vw 0 0 8vw;
+    }
+
+    .main-heading {
+        max-width: 77vw;
+    }
+
+    #ma-top {
+        max-width: 67vw;
+    }
+
+    #ma-bottom {
+        max-width: 60vw;
+    }
+
+    .main-description-buttons {
+        display: flex;
+    }
+
+    .box-content p {
+        font-size: 12px;
+    }
+
+    .reagent-card-wrapper {
+        padding-top: 160px;
+    }
+
+    .ma-vcard {
+        height: 389px;
+        min-width: 280px;
+    }
+}
+
+@media (max-width: 620px) {
+    html {
+        --srg_right: 1vw;
+    }
+
+    .ma-vcard {
+        height: 389px;
+        min-width: 270px;
+    }
+
+    .modal {
+        min-width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        --srg_right: 0.5vw;
+    }
+
+    .services-description {
+        top: 41%;
+        left: 9%;
+    }
+
+    .ma-vcard {
+        height: 389px;
+        min-width: 260px;
+    }
+
+    .slide {
+        margin: 100px 0 0 0;
+    }
+}
+
+@media (max-width: 580px) {
+    html {
+        --srg_right: 14vw;
+        --srg_bottom: -380px;
+        --sr_margin-px: 5px;
+        --sr_size-vw: 17vw;
+    }
+
+    .main-logo-text {
+        font-size: 1.6rem;
+        margin-bottom: 3px;
+    }
+
+    .main-logo {
+        height: 60px;
+    }
+
+    .sidebarIconToggle {
+        top: 3px;
+    }
+
+    .cover-rectangle-right-top {
+        bottom: 1080px;
+    }
+
+    .cover-rectangle-right-bottom {
+        width: 37vw;
+        height: 50%;
+    }
+
+    .main-services {
+        height: 1310px;
+    }
+
+    .services-description {
+        top: 30%;
+        left: 9%;
+    }
+
+    .services-rectangle-group {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .box-wrapper.active:nth-child(2),
+    .box-wrapper:nth-child(2):has(.box:hover),
+    .box-wrapper.active:nth-child(3),
+    .box-wrapper:nth-child(3):has(.box:hover),
+    .box-wrapper.active:nth-child(5),
+    .box-wrapper:nth-child(5):has(.box:hover) {
+        filter: drop-shadow(0px 15px 4px #d9d9d9);
+    }
+
+    .box-wrapper:nth-child(2),
+    .box-wrapper:nth-child(4) {
+        transform: unset;
+    }
+
+    .box-wrapper:nth-child(9) {
+        transform: translateX(var(--polygon_gap-50));
+    }
+
+    .box-wrapper:nth-child(3),
+    .box-wrapper:nth-child(5) {
+        transform: translateX(var(--polygon_gap-50)) translateY(var(--polygon_gap-50-neg));
+    }
+
+    .box-wrapper.active:nth-child(2),
+    .box-wrapper:nth-child(2):hover,
+    .box-wrapper.active:nth-child(4),
+    .box-wrapper:nth-child(4):hover {
+        transform: scale(1.1) translateX(-5%) translateY(-5%);
+    }
+
+    .box-wrapper.active:nth-child(3),
+    .box-wrapper:nth-child(3):hover,
+    .box-wrapper.active:nth-child(5),
+    .box-wrapper:nth-child(5):hover {
+        transform: scale(1.1) translateX(calc(50% - 10% + var(--polygon_margin))) translateY(var(--polygon_gap-50-neg));
+    }
+}
+
+@media (max-width: 560px) {
+    .contacts-button {
+        padding: 7px 20px;
+    }
+
+    .services-description {
+        max-width: 68vw;
+        left: 7%;
+        top: 32%;
+    }
+
+    .reagent-card-wrapper {
+        padding-top: 200px;
+    }
+
+    .main-advantages-heading {
+        max-width: 50%;
+        margin-top: 100px;
+    }
+
+    .ma-vcard {
+        height: 389px;
+        min-width: 240px;
+    }
+
+    .pics .pic-1 {
+        transform-origin: 30% 20%;
+    }
+
+    .pics .pic-3 {
+        transform-origin: 30% 50%;
+    }
+}
+
+@media (max-width: 540px) {
+    .services-description {
+        max-width: 67vw;
+        left: 6%;
+    }
+}
+
+@media (max-width: 530px) {
+    .ma-vcard {
+        height: 389px;
+        min-width: 220px;
+    }
+}
+
+@media (max-width: 520px) {
+    .cover-rectangle-right-bottom {
+        width: 41vw;
+        height: 53%;
+    }
+
+    .services-description {
+        top: 32%;
+    }
+
+    .pagination {
+        padding: 12px 0 12px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        --srg_right: 9vw;
+    }
+
+    .sidebarIconToggle {
+        left: -15vw;
+    }
+
+    .contacts-button {
+        margin-right: 15px;
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+
+    .reagent-card-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-advantages-subheading {
+        max-width: 74%;
+    }
+
+    .main-advantages-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ma-vcard {
+        height: 180px;
+        min-width: 320px;
+    }
+
+    .ma-vcard:hover {
+        height: 320px;
+        max-width: 220px;
+    }
+
+    #mac-2:hover,
+    #mac-3:hover,
+    #mac-4:hover,
+    #mac-5:hover,
+    #mac-6:hover {
+        background-position-y: bottom;
+    }
+
+    .card-description {
+        margin-top: 10%;
+    }
+
+    .mac-content {
+        margin: 25px;
+    }
+
+    .card-description-header {
+        margin-top: 15px;
+    }
+
+    .pagination-item {
+        width: 40%;
+    }
+}
+
+@media (max-width: 460px) {
+    .main-logo-text {
+        font-size: 1.3rem;
+    }
+
+    .documents-slider {
+        width: 400px;
+        height: 480px;
+    }
+
+    .frame {
+        width: 290px;
+        height: 400px;
+        margin-top: -38%;
+        margin-left: -35%;
+    }
+
+    .pics .pic {
+        width: 133px;
+        height: 176px;
+    }
+
+    .foo-contacts {
+        display: grid;
+        padding: 20px 20px 40px 20px;
+    }
+
+    .foo-logo {
+        max-width: 20vw;
+        margin-bottom: 20px;
+    }
+
+    .foo-copyright p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 440px) {
+    .main-logo {
+        right: 10px;
+    }
+
+    .spinner {
+        height: 3px;
+        width: 90%;
+    }
+
+    input[type="checkbox"]:checked~.sidebarIconToggle>.diagonal.part-2 {
+        margin-top: -10px;
+    }
+
+    .main-description-buttons {
+        display: grid;
+    }
+
+    .md-button-left,
+    .md-button-right {
+        font-size: 11px;
+        margin-right: 0;
+        padding: 6px;
+    }
+
+    .services-description {
+        top: 32.5%;
+    }
+
+    .services-description h2 {
+        font-size: 1.5rem;
+    }
+
+    .reagent-card-wrapper {
+        padding-top: 200px;
+    }
+
+    .pagination-item {
+        width: 42%;
+        font-size: 12px;
+    }
+
+    .pics .pic-2 {
+        transform-origin: 80% 30%;
+    }
+
+    .pics .pic-4 {
+        transform-origin: 80% 80%;
+    }
+
+    .slide {
+        margin: 80px 0 0 0;
+    }
+
+    .documents-slider {
+        width: 360px;
+        height: 460px;
+    }
+
+    .frame {
+        width: 270px;
+        height: 330px;
+        margin-top: -34%;
+        margin-left: -35%;
+    }
+
+    .pics .pic {
+        width: 123px;
+        height: 161px;
+    }
+
+    .foo-contacts {
+        max-width: 65%;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 430px) {
+    html {
+        --srg_right: 5vw;
+    }
+}
+
+@media (max-width: 410px) {
+    html {
+        --srg_right: 4vw;
+    }
+
+    #slider-container {
+        width: 94%;
+    }
+}
+
+@media (max-width: 400px) {
+    .cover-rectangle-right-bottom {
+        width: 47vw;
+        height: 53%;
+    }
+
+    .services-description {
+        top: 34%;
+    }
+
+    .documents-slider {
+        width: 330px;
+        height: 360px;
+    }
+
+    .frame {
+        width: 250px;
+        height: 310px;
+        margin-top: -44%;
+        margin-left: -36%;
+    }
+
+    .pics .pic {
+        width: 113px;
+        height: 151px;
+    }
+
+    .modal h2 {
+        font-size: 20px;
+    }
+
+    .modal button {
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 390px) {
+    html {
+        --srg_right: 2vw;
+    }
+
+    .main-advantages-subheading {
+        max-width: 84%;
+    }
+
+    .slide {
+        margin: 95px 0 0 0;
+    }
+}
+
+@media (max-width: 380px) {
+    html {
+        --srg_right: 0;
+        --sr_p_marginb: 6px;
+    }
+
+    .documents-slider {
+        width: 320px;
+        height: 350px;
+    }
+
+    .frame {
+        width: 230px;
+        height: 300px;
+        margin-top: -44%;
+        margin-left: -34%;
+    }
+
+    .pics .pic {
+        width: 105px;
+        height: 144px;
+    }
+
+    .foo-copyright {
+        padding: 15px;
+    }
+
+    .modal h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 370px) {
+    .ma-vcard {
+        height: 180px;
+        min-width: 300px;
+    }
+
+    .pagination-item {
+        font-size: 11px;
+    }
+
+    .documents-slider {
+        width: 300px;
+        height: 330px;
+    }
+
+    .frame {
+        width: 220px;
+        height: 280px;
+        margin-top: -44%;
+        margin-left: -36%;
+    }
+
+    .pics .pic {
+        width: 100px;
+        height: 134px;
+    }
+
+    .foo-copyright p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    html {
+        --sr_size-vw: 16vw;
+        --sr_p_fsize: 10px;
+        --sr_rd_fsize: 10px;
+    }
+
+    .foo-copyright {
+        padding: 10px;
+    }
+}

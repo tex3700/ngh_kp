@@ -1,0 +1,131 @@
+/*Slider show*/
+
+
+#slider-container {
+    position: relative;
+    width: 90vw;
+    height: 649px;
+    margin: 0 var(--side_indent) 0 var(--side_indent);
+    overflow: hidden;
+}
+
+#slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 55vw;
+    max-width: 55vw;
+    height: auto;
+}
+
+.slide-img {
+    flex-grow: 2;
+    object-fit: cover;
+}
+
+.slide-description {
+    margin: 12vw 7vw 0 2vw;
+    height: 50%;
+    flex-grow: 1;
+}
+
+/*.next-prev-wrapper {*/
+/*    position: absolute;*/
+/*}*/
+
+#prev,
+#next {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    /*left: 34vw;*/
+    /*transform: translateY(-50%);*/
+    /*transform: translate(40%, 180%);*/
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/*#prev {*/
+/*    left: 57vw;*/
+/*}*/
+
+#prev img {
+    width: 70%;
+    height: auto;
+}
+
+#next img {
+    width: 70%;
+    height: auto;
+}
+
+/*#next {*/
+/*    right: 22vw;*/
+/*}*/
+
+.pagination {
+    display: flex;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 65%;
+    margin-right: 60px;
+    background: #FFF;
+    box-shadow: 0px 20px 50px 0px rgba(6, 37, 91, 0.06);
+    padding: 12px 0 12px 40px;
+}
+
+.pagination-item {
+    display: inline-block;
+    margin: 0 10px;
+    color: #A8ACAD;
+    cursor: pointer;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 85%;
+    /* 17px */
+    letter-spacing: -1px;
+    border-right: dashed;
+    width: 30%;
+}
+
+.pagination-item.active {
+    color: #2F3034;
+    font-weight: bold;
+}
+
+.pgn-description {
+    margin: 15px 10px 0 0;
+}
+
+.pgn-plus {
+    margin-left: 15px;
+}
+
+.sl-heading {
+    color: #000;
+}
+
+.sl-description {
+    color: var(--Light-Gray-dark, #737B7D);
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 20.8px */
+    letter-spacing: 0.3px;
+    margin: 12px 30px 0 0;
+}

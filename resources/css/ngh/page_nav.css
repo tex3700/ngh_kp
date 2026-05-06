@@ -1,0 +1,154 @@
+.page-nav {
+    display: flex;
+    /*padding-left: 60px;*/
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    /*margin-bottom: -70px;*/
+    background: #06255B;
+}
+
+.page-nav a {
+    text-decoration: none;
+}
+
+.main-logo-text {
+    margin-bottom: 10px;
+}
+
+.main-menu-button {
+    display: flex;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+/* Dropdown */
+.menu-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-dropdown__toggle {
+    cursor: pointer;
+    color: #ffffff;
+    transition: color 0.2s;
+}
+
+.menu-dropdown:hover .menu-dropdown__toggle {
+    color: #aaaaaa;
+}
+
+/* Стрелка через псевдоэлемент */
+.menu-dropdown__toggle::after {
+    content: '';
+    display: inline-block;
+    margin-left: 6px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid currentColor;
+    vertical-align: middle;
+    transition: transform 0.2s ease;
+}
+
+/* Переворачиваем стрелку при наведении на dropdown */
+.menu-dropdown:hover .menu-dropdown__toggle::after {
+    transform: rotate(180deg);
+}
+
+.menu-dropdown__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #06255B;
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+    min-width: 180px;
+    z-index: 1000;
+    border-top: 2px solid rgba(255,255,255,0.2);
+}
+
+.menu-dropdown__list li a {
+    display: block;
+    padding: 8px 16px;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.menu-dropdown__list li a:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* Показываем при наведении (десктоп) */
+.menu-dropdown:hover .menu-dropdown__list {
+    display: block;
+}
+
+/* Мобильное меню — раскрытие по клику через JS */
+.sidebar-dropdown .menu-dropdown__list {
+    position: static;
+    display: none;
+    background: rgba(255,255,255,0.05);
+    padding-left: 16px;
+}
+
+.sidebar-dropdown.open .menu-dropdown__list {
+    display: block;
+}
+
+/* Стрелка в мобильном меню */
+.sidebar-dropdown .menu-dropdown__toggle::after {
+    content: '';
+    display: inline-block;
+    margin-left: 6px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid currentColor;
+    vertical-align: middle;
+    transition: transform 0.2s ease;
+}
+
+.sidebar-dropdown.open .menu-dropdown__toggle::after {
+    transform: rotate(180deg);
+}
+
+
+
+@media (max-width: 920px) {
+    .sidebarIconToggle {
+        top: -8px;
+    }
+
+    .sidebarMenu .menu-dropdown__list {
+        padding: 0;
+    }
+
+    .menu-dropdown__list li a {
+        padding: 0 16px;
+    }
+
+}
+
+@media (max-width: 690px) {
+    .sidebarIconToggle {
+        left: -8vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebarIconToggle {
+        left: -5vw;
+    }
+
+    .main-logo {
+        right: 0;
+    }
+}

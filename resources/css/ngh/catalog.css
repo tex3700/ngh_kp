@@ -1,0 +1,87 @@
+.catalog-page {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.catalog-page h1 {
+    color: #06255B;
+    margin-bottom: 30px;
+    font-family: Gilroy-Bold, Arial, sans-serif;
+}
+.catalog-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Source Sans Pro, sans-serif;
+    font-size: 15px;
+}
+.catalog-table th {
+    background: #06255B;
+    color: #fff;
+    padding: 12px 16px;
+    text-align: left;
+}
+.catalog-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #e0e0e0;
+    vertical-align: middle;
+}
+.catalog-table tr:hover td {
+    background: #f5f8ff;
+}
+.catalog-table td.qr-cell {
+    text-align: center;
+    width: 180px;
+}
+.catalog-table td.qr-cell img {
+    display: block;
+    margin: 0 auto 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+.product-link {
+    color: #06255B;
+    font-weight: 600;
+    text-decoration: none;
+}
+.product-link:hover {
+    text-decoration: underline;
+}
+.product-desc {
+    color: #555;
+    font-size: 13px;
+    margin-top: 4px;
+}
+.qr-download-btn {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 5px 12px;
+    background: #06255B;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.qr-download-btn:hover {
+    background: #0a3a8a;
+}
+
+.create-qr-link {
+    float: right;
+    text-decoration: none;
+}
+
+@media (max-width: 580px) {
+    .media-hide-column {
+        display: none;
+    }
+}
+
+@media (max-width: 380px) {
+    .catalog-page {
+        max-width: 96%;
+        margin: 20px auto;
+        padding: 0;
+    }
+}
