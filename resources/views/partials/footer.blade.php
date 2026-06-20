@@ -21,7 +21,7 @@
     <div class="foo-copyright">
         <p>Imprint l 2023</p>
         <p>Copyright : НефтеГазХим, все права защищены</p>
-        <p class="design-name">Consulting & Structural Engineering Design</p>
+        <p class="design-name"><a href="#" id="confidence-policy-link" class="checkbox-link" style="color: #fff">Политика конфиденциальности</a></p>
     </div>
 </footer>
 

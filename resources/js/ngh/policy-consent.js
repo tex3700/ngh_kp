@@ -37,36 +37,45 @@ document.addEventListener('DOMContentLoaded', function() {
         return null;
     }
 
-    // Открытие модального окна политики cookie
-    const cookiePolicyLink = document.querySelector('.cookie-consent__link');
+    const cookiePolicyLinks = document.querySelectorAll('.cookie-consent__link');
     const cookiePolicyModal = document.getElementById('cookiePolicyModal');
     const closeCookiePolicyModal = document.getElementById('closeCookiePolicyModal');
 
-    const confidencePolicyLink = document.getElementById('confidence-policy-link');
     const confidencePolicyModal = document.getElementById('confidencePolicyModal');
     const closeConfidencePolicyModal = document.getElementById('closeConfidencePolicyModal');
 
-    const agreePolicyLink = document.getElementById('agree-policy-link');
     const agreePolicyModal = document.getElementById('agreePolicyModal');
     const closeAgreePolicyModal = document.getElementById('closeAgreePolicyModal');
 
-    if (cookiePolicyLink && cookiePolicyModal && closeCookiePolicyModal) {
-        policyModalHandle(cookiePolicyLink, cookiePolicyModal, closeCookiePolicyModal);
-    }
+    // Делегирование событий для динамически добавляемых или дублирующихся ID элементов
+    document.addEventListener('click', function(e) {
+        const target = e.target.closest('#confidence-policy-link, #agree-policy-link');
+        if (!target) return;
 
-    if (confidencePolicyLink && confidencePolicyModal && closeConfidencePolicyModal) {
-        policyModalHandle(confidencePolicyLink, confidencePolicyModal, closeConfidencePolicyModal);
-    }
-
-    if (agreePolicyLink && agreePolicyModal && closeAgreePolicyModal) {
-        policyModalHandle(agreePolicyLink, agreePolicyModal, closeAgreePolicyModal);
-    }
-
-    function policyModalHandle(link, modal, closeModal) {
-        link.addEventListener('click', function(e) {
+        if (target.id === 'confidence-policy-link' && confidencePolicyModal) {
             e.preventDefault();
-            modal.style.display = 'flex';
+            confidencePolicyModal.style.display = 'flex';
+        } else if (target.id === 'agree-policy-link' && agreePolicyModal) {
+            e.preventDefault();
+            agreePolicyModal.style.display = 'flex';
+        }
+    });
+
+    if (cookiePolicyLinks.length > 0 && cookiePolicyModal && closeCookiePolicyModal) {
+        cookiePolicyLinks.forEach(link => {
+            policyModalHandle(link, cookiePolicyModal, closeCookiePolicyModal);
         });
+    }
+
+    if (confidencePolicyModal && closeConfidencePolicyModal) {
+        setupModalClose(confidencePolicyModal, closeConfidencePolicyModal);
+    }
+
+    if (agreePolicyModal && closeAgreePolicyModal) {
+        setupModalClose(agreePolicyModal, closeAgreePolicyModal);
+    }
+
+    function setupModalClose(modal, closeModal) {
         closeModal.addEventListener('click', function() {
             modal.style.display = 'none';
         });
@@ -76,5 +85,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 modal.style.display = 'none';
             }
         });
+    }
+
+    function policyModalHandle(link, modal, closeModal) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            modal.style.display = 'flex';
+        });
+        setupModalClose(modal, closeModal);
     }
 });
