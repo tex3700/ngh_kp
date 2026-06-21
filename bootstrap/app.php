@@ -9,6 +9,16 @@ return Application::configure(basePath: dirname(__DIR__))
         web: __DIR__.'/../routes/web.php',
         commands: __DIR__.'/../routes/console.php',
         health: '/up',
+
+        // Добавляем маршруты для FileManager
+        then: function () {
+            Route::group([
+                'prefix' => 'laravel-filemanager',
+                'middleware' => ['moonshine', 'auth.moonshine']
+            ], function () {
+                \UniSharp\LaravelFilemanager\Lfm::routes();
+            });
+        }
     )
     ->withMiddleware(function (Middleware $middleware): void {
         //

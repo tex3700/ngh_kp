@@ -54,9 +54,10 @@ return [
             'region' => env('AWS_DEFAULT_REGION'),
             'bucket' => env('AWS_BUCKET'),
             'url' => env('AWS_URL'),
-            'endpoint' => env('AWS_ENDPOINT'),
+            'endpoint' => env('AWS_ENDPOINT'), // Критически важно для S3-совместимых хранилищ!
             'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
-            'throw' => false,
+            'visibility' => 'public', // Делаем файлы публичными по умолчанию
+            'throw' => true, // Рекомендуется для отладки
             'report' => false,
         ],
 

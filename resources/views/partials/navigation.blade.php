@@ -14,7 +14,7 @@
                     <span class="menu-dropdown__toggle">Продукция</span>
                     <ul class="menu-dropdown__list">
                         @foreach ($products as $product_sidebar_item)
-                            <li><a href="{{ $product_sidebar_item['url'] }}">{{ $product_sidebar_item['short_name'] }}</a></li>
+                            <li><a href="{{ route('product.show', $product_sidebar_item->slug) }}">{{ $product_sidebar_item->short_name }}</a></li>
                         @endforeach
                     </ul>
                 </li>
@@ -35,7 +35,7 @@
             <span class="menu-link menu-dropdown__toggle">Продукция</span>
             <ul class="menu-dropdown__list">
                 @foreach ($products as $product_item)
-                    <li><a href="{{ $product_item['url'] }}">{{ $product_item['short_name'] }}</a></li>
+                    <li><a href="{{ route('product.show', $product_item->slug) }}">{{ $product_item->short_name }}</a></li>
                 @endforeach
             </ul>
         </div>

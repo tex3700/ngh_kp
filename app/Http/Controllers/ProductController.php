@@ -9,7 +9,7 @@ class ProductController extends Controller
 {
     public function show(string $slug)
     {
-        $product = Product::find($slug);
+        $product = Product::where('slug', $slug)->first();
 
         $products = Product::all();
 

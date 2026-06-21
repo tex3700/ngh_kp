@@ -5,14 +5,14 @@
 
     <a class="product-back-link" href="{{ route('home') }}">← Вернуться на главную</a>
 
-    <h1 class="product-title">{{ $product['name'] }}</h1>
+    <h1 class="product-title">{{ $product->name }}</h1>
 
     <div class="product-description">
-        <p class="subheading">{{ $product['full_description'] }}</p>
+        <p class="subheading">{{ $product->full_description }}</p>
     </div>
 
     <div class="product-documents">
-        <h3>Сопроводительная документация для {{ $product['short_name'] }}</h3>
+        <h3>Сопроводительная документация для {{ $product->short_name }}</h3>
         <div class="documents-list">
             @if (empty($documents))
                 <p>Документы не найдены.</p>

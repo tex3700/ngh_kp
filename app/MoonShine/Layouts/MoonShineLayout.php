@@ -5,17 +5,19 @@ declare(strict_types=1);
 namespace App\MoonShine\Layouts;
 
 use MoonShine\Laravel\Layouts\AppLayout;
-use MoonShine\ColorManager\Palettes\SkyPalette;
+use MoonShine\ColorManager\Palettes\PurplePalette;
 use MoonShine\ColorManager\ColorManager;
 use MoonShine\Contracts\ColorManager\ColorManagerContract;
 use MoonShine\Contracts\ColorManager\PaletteContract;
+use App\MoonShine\Resources\User\UserResource;
+use MoonShine\MenuManager\MenuItem;
 
 final class MoonShineLayout extends AppLayout
 {
     /**
      * @var null|class-string<PaletteContract>
      */
-    protected ?string $palette = SkyPalette::class;
+    protected ?string $palette = PurplePalette::class;
 
     protected function assets(): array
     {
@@ -28,6 +30,7 @@ final class MoonShineLayout extends AppLayout
     {
         return [
             ...parent::menu(),
+            MenuItem::make(UserResource::class, 'Users'),
         ];
     }
 

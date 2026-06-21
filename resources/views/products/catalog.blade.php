@@ -39,17 +39,17 @@
             <tr>
                 <td class="media-hide-column">{{ $i }}</td>
                 <td>
-                    <a class="product-link" href="{{ $product['url'] }}" target="_blank">
-                        {{ $product['name'] }}
+                    <a class="product-link" href="{{ $product->url }}" target="_blank">
+                        {{ $product->name }}
                     </a>
                 </td>
                 <td class="media-hide-column">
-                    <span class="product-desc">{{ $product['description'] }}</span>
+                    <span class="product-desc">{{ $product->description }}</span>
                 </td>
                 <td class="qr-cell">
                     <div id="qr-wrap-{{ $i }}"></div>
                     <button class="qr-download-btn"
-                        onclick="downloadQR({{ $i }}, '{{ $product['slug'] }}')">
+                        onclick="downloadQR({{ $i }}, '{{ $product->slug }}')">
                         ↓ Скачать QR
                     </button>
                 </td>
@@ -66,7 +66,7 @@
 let qrData = [
     @php $i = 1; @endphp
     @foreach ($products as $product)
-    {id: {{ $i }}, url: '{{ addslashes($product['url']) }}', slug: '{{ $product['slug'] }}'},
+    {id: {{ $i }}, url: '{{ addslashes($product->url) }}', slug: '{{ $product->slug }}'},
     @php $i++; @endphp
     @endforeach
 ];
