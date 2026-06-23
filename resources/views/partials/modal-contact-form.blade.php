@@ -4,7 +4,7 @@
 
     <div class="modal-overlay"></div>
     <div class="modal" id="cf-modal">
-        <form id="contactForm" action="{{ route('contact.send') }}" method="post">
+        <form id="contactForm" action="{{ route('contact.send', [], false) }}" method="post">
             @csrf
             <h2>Оставьте Ваше сообщение</h2>
             <div class="label-float">
