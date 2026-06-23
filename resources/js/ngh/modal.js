@@ -146,14 +146,23 @@ document.addEventListener("DOMContentLoaded", function () {
         const formAction = contactForm.getAttribute('action') || '/contact/send';
         fetch(formAction, {
             method: 'POST',
-            body: formData
+            body: formData,
+            headers: {
+                'Accept': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
+            }
         })
-            .then(response => response.text())
+            .then(response => {
+                if (!response.ok) {
+                    return response.json().then(err => { throw err; });
+                }
+                return response.json();
+            })
             .then(data => {
                 contactForm.style.display = 'none';
-                responseMessage.innerHTML = data;
+                responseMessage.innerHTML = `<p class="success-message">${data.message}</p>`;
                 responseMessage.style.display = 'block';
-                // Закрываем модальное окно через 5 секунд
+                // Закрываем модальное окно через 3 секунды
                 setTimeout(function () {
                     modal.classList.remove('show');
                     modalOverlay.classList.remove('show');
@@ -161,7 +170,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 }, 3000);
             })
             .catch(error => {
-                responseMessage.innerHTML = 'Ошибка при отправке сообщения.';
+                const errorMessage = error.error || error.message || 'Ошибка при отправке сообщения.';
+                responseMessage.innerHTML = `<p class="error-message">${errorMessage}</p>`;
                 responseMessage.style.display = 'block';
                 console.error('Ошибка:', error);
             });

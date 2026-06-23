@@ -28,11 +28,21 @@ class ContactController extends Controller
 
         $body = "Имя: {$name}\r\nEmail: {$email}\r\nТелефон: {$phone}\r\nСообщение:\r\n{$message}";
 
-        Mail::raw($body, function ($mail) use ($name, $email) {
-            $mail->to(['it@nghim.ru', 'support@nghim.ru'])
-                 ->replyTo($email, $name)
-                 ->subject('Сообщение с формы обратной связи');
-        });
+        try {
+            Mail::raw($body, function ($mail) use ($name, $email) {
+                $mail->to(['it@nghim.ru', 'support@nghim.ru'])
+                     ->replyTo($email, $name)
+                     ->subject('Сообщение с формы обратной связи');
+            });
+        } catch (\Exception $e) {
+            \Log::error('Ошибка отправки почты: ' . $e->getMessage());
+
+            if ($request->expectsJson()) {
+                return response()->json(['error' => 'Ошибка при отправке сообщения. Пожалуйста, попробуйте позже.'], 500);
+            }
+
+            return back()->with('error', 'Ошибка при отправке сообщения. Пожалуйста, попробуйте позже.');
+        }
 
         if ($request->expectsJson()) {
             return response()->json(['message' => 'Сообщение успешно отправлено.']);
