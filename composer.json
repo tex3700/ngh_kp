@@ -8,6 +8,7 @@
     "require": {
         "php": "^8.3",
         "ext-curl": "*",
+        "laravel-lang/common": "^6.8",
         "laravel/framework": "^13.0",
         "laravel/tinker": "^3.0",
         "moonshine/moonshine": "^4.10",

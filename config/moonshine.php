@@ -24,9 +24,9 @@ use MoonShine\Laravel\Pages\LoginPage;
 use MoonShine\Laravel\Pages\ProfilePage;
 
 return [
-    'title' => env('MOONSHINE_TITLE', 'MoonShine'),
-    'logo' => '/vendor/moonshine/logo-small.svg',
-    'logo_small' => '/vendor/moonshine/logo-small.svg',
+    'title' => env('MOONSHINE_TITLE', 'НефтеГазХим'),
+    'logo' => '/img/ngh_logo.png',
+    'logo_small' => '/img/ngh_logo.png',
 
     'favicons' => [
         'apple-touch' => '/vendor/moonshine/apple-touch-icon.png',
@@ -44,7 +44,7 @@ return [
 
     // Routing
     'domain' => env('MOONSHINE_DOMAIN'),
-    'prefix' => env('MOONSHINE_ROUTE_PREFIX', 'admin'),
+    'prefix' => env('MOONSHINE_ROUTE_PREFIX', 'admin-ngh'),
     'page_prefix' => env('MOONSHINE_PAGE_PREFIX', 'page'),
     'resource_prefix' => env('MOONSHINE_RESOURCE_PREFIX', 'resource'),
     'home_route' => 'moonshine.index',
@@ -106,9 +106,10 @@ return [
     ],
 
     // Localizations
-    'locale' => 'en',
+    'locale' => 'ru',
     'locale_key' => ChangeLocale::KEY,
     'locales' => [
-        // en
+        'en' => 'English',
+        'ru' => 'Russian',
     ],
 ];
